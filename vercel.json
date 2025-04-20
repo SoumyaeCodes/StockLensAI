@@ -1,0 +1,18 @@
+{
+    "builds": [
+      {
+        "src": "LLM_Dashboard/app.py",
+        "use": "@vercel/python",
+        "config": {
+          "maxLambdaSize": "15mb",
+          "runtime": "python3.11" 
+      }
+    }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "LLM_Dashboard/app.py"
+      }
+    ]
+  }
