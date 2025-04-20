@@ -496,8 +496,6 @@ def run_analysis(stock_symbol):
 
 if __name__ == "__main__":
     # Run analysis for a stock symbol
-    st.set_page_config(page_title="StockLensAI")
-
     stock_symbol = input("Enter stock symbol to analyze: ").upper()
     if not stock_symbol:
         stock_symbol = "AAPL"  # Default
