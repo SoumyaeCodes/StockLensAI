@@ -1,12 +1,12 @@
 {
-    "current_date": "2025-04-19",
+    "current_date": "2025-04-20",
     "prediction_date": "2025-04-21",
     "current_price": 5282.7001953125,
     "predicted_price": 5229.873193359375,
     "price_change": -52.827001953125,
     "price_change_pct": -1.0,
     "direction": "DOWN",
-    "confidence": 53.11965346336365,
+    "confidence": 53.114521503448486,
     "visualization": "results/SP500_prediction_2025-04-21.png",
     "technical_indicators": {
         "rsi": {
