@@ -1,0 +1,35 @@
+# render.yaml for Streamlit Deployment
+
+services:
+  - name: finwisely-streamlit  # Replace with your desired app name on Render
+    type: web  # Indicates a web service (for Streamlit)
+    runtime: python3.11  # Or your desired Python version (check Render's supported versions)
+    
+    # Set the directory where your app.py and requirements.txt are.
+    #  Crucially, set it to LLM_Dashboard
+    rootDir: LLM_Dashboard
+    
+    startCommand: streamlit run app.py  # Command to start Streamlit
+    
+    #  Add any environment variables your app needs.  For example,
+    #  if you have a  REDDIT_CLIENT_ID  environment variable
+    envVars:
+      - name: REDDIT_CLIENT_ID
+        value: REDDIT_CLIENT_ID #  Replace with your actual environment variable name
+      - name: REDDIT_CLIENT_SECRET
+        value: REDDIT_CLIENT_SECRET
+      - name: REDDIT_USER_AGENT
+        value: REDDIT_USER_AGENT
+      - name: GEMINI_API_KEY
+        value: GEMINI_API_KEY
+      - name: ALPHA_VANTAGE_API_KEY
+        value: ALPHA_VANTAGE_API_KEY
+      - name: GROQ_API_KEY_1
+        value: GROQ_API_KEY_1
+      - name: GROQ_API_KEY_2
+        value: GROQ_API_KEY_2
+        
+    
+    #  Static files are served from the root directory.  If you have a
+    #  'static' folder in LLM_Dashboard, set to '/'.  If in the root, use 'LLM_Dashboard'
+    staticDir: '/'
