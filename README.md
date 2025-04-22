@@ -40,6 +40,20 @@ The entire stock prediction workflow is automated using an **MLOps pipeline**, w
 
 ---
 
+## Project Directory Overview
 
+There are four major directories in this project that you should explore to better understand and run the code:
 
+1. **Chatbot**  
+   Contains the final chatbot architecture along with detailed explanations of its components.
 
+2. **Data Preparation**  
+   Includes the datasets and preprocessing steps used throughout the project.
+
+3. **LLM_Dashboard**  
+   Demonstrates the use of predictive models for stock price prediction, integrated into a dashboard format.
+
+4. **Stock EDA and Trend Prediction**  
+   Provides exploratory data analysis (EDA) of stock data and illustrates trend prediction methods.
+
+---
