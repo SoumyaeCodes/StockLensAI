@@ -48,6 +48,23 @@ export TAVILY_API_KEY="your_tavily_api_key"
 export AWS_ACCESS_KEY_ID="your_aws_access_key"
 export AWS_SECRET_ACCESS_KEY="your_aws_secret_access_key"
 export AWS_DEFAULT_REGION="your_aws_region"
+# Required API Keys
+SERPER_API_KEY=your_serper_api_key
+REDDIT_CLIENT_ID=your_reddit_client_id
+REDDIT_CLIENT_SECRET=your_reddit_client_secret
+REDDIT_USER_AGENT=your_reddit_user_agent
+GEMINI_API_KEY=your_gemini_api_key
+ALPHA_VANTAGE_API_KEY=your_alpha_vantage_api_key
+
+# Optional - Multiple Groq accounts for advanced parallelization
+GROQ_API_KEY=your_groq_api_key
+GROQ_API_KEY_1=your_first_groq_key
+GROQ_API_KEY_2=your_second_groq_key
+
+# Configuration Options
+USE_PARALLEL_EXECUTION=true
+SAVE_INTERIM_RESULTS=true
+DEBUG_MODE=false
 ```
 
 ## Setting Up Your Development Environment
